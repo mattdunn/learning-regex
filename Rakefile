@@ -1,5 +1,8 @@
-require 'rspec/core/rake_task'
+$:.unshift('lib')
+require 'string_extensions'
 
-RSpec::Core::RakeTask.new(:spec)
+task :default => :learn
 
-task :default => :spec
+task :learn do
+  Dir.glob("learnings/*.rb").each {|f| require File.expand_path(f)}
+end
