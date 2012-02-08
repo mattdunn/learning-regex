@@ -2,7 +2,7 @@
 
   * Learn to use regex like a pro:
 
-  !(lib/xzibit-regex-meme.jpg)
+  ![YO DAWG, I HERD YOU LIKE MATCHING, SO I PUT A REGEX IN YOUR CODE SO YOU CAN MATCH WHILE YOU MATCH](lib/xzibit-regex-meme.jpg)
 
 To Do
 -----
