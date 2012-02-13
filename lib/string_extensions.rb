@@ -5,7 +5,7 @@ class String
   end
   
   def shouldnt_match(pattern)
-    raise "'#{pattern}' matches: '#{self}'" if match(pattern) 
+    raise "'#{pattern}' matches: '#{self}' when it shoudn't" if match(pattern) 
     puts "'#{pattern}' doesn't match: '#{self}'"
   end
 end
