@@ -7,12 +7,12 @@ Learn to use regex like a pro:
 
   ![YO DAWG, I HERD YOU LIKE MATCHING, SO I PUT A REGEX IN YOUR CODE SO YOU CAN MATCH WHILE YOU MATCH](https://github.com/mattdunn/learning-regex/raw/master/lib/xzibit-regex-meme.jpg)
 
-License
+license
 -------
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
 
-To Do
+to do
 -----
   * Revise failure output
     * need to handle exception in rake task 
