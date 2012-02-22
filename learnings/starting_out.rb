@@ -14,24 +14,27 @@
 
 
 # character class: [] 
-# [a] any of, matching a single character (exactly matching case)
+# [a] matches a single character (exactly matching case)
 'Elvis, the king, rocks'.should_match 'r[o]cks'
 'Elvis, the king, rocks'.should_match 'r[oa]cks'
 'Elvis, the king, racks'.should_match 'r[oa]cks'
 'Elvis, the king, rocks'.shouldnt_match 'r[i]cks'
 
-# [a-b] any of, matching a single character (exactly matching case), within a range
+# [a-b] matches a single character (exactly matching case), within a range
 'Elvis, the king, rocks 4 eva'.should_match '[1-5]'
 'Elvis, the king, rocks 6 eva'.shouldnt_match '[1-5]'
 
-# [a-b1-2] any of, matching a single character (exactly matching case), within any of the given ranges in any order
+# [a-b1-2] matches a single character (exactly matching case), within any of the given ranges in any order
 'Elvis, the king, rocks 4 eva'.should_match '[1-5A-E]'
 'Elvis, the king, rocks 4 eva'.should_match '[1-5w-z]'
 'Elvis, the king, rocks 4 eva'.shouldnt_match '[5-9y-z]'
 
-# [-a] literal text match, as dash as first character in character class is not considered to denote a range
+# [-a] matches literal text, as dash as the first character in a character class does not denote a range
 'Elvis, the king, rocks 4-eva'.should_match '[-]'
 'Elvis, the king, rocks 4 eva'.shouldnt_match '[-]'
 
-# [^a-b] negated range, doesn't match any of, matching a single character (exactly matching case), within a range
+# [^a-b] negated range, matches characters not listed within a range
 'Elvis, the king, rocks 4 eva'.should_match '[^y-z]'
+
+# [.] matches any single character in a specified position
+'Elvis, the king, rocks 4 eva'.should_match '[e.a]'
