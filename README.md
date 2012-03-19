@@ -14,5 +14,11 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 to do
 -----
+  * Regex features that vary per-implementation:
+    * Case insensitivity (-i)
+    * Word Boundaries ('[/<king/>]')
+
   * Revise failure output
     * need to handle exception in rake task 
+
+  * Look at : http://www.tutorialspoint.com/ruby/ruby_regular_expressions.htm
