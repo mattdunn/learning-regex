@@ -22,3 +22,7 @@ to do
     * need to handle exception in rake task 
 
   * Look at : http://www.tutorialspoint.com/ruby/ruby_regular_expressions.htm
+
+  * Colour output with the Colorize gem 
+
+  * Output the comments
