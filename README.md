@@ -26,3 +26,6 @@ to do
   * Colour output with the Colorize gem 
 
   * Output the comments
+
+  * useful examples:
+    ** One or more digits: [0-9]+
